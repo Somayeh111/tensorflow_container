@@ -11,4 +11,4 @@ From: tensorflow/tensorflow:latest-gpu-py3
     apt update
     apt install -y python3-venv
     python3 -m pip install --user tensorflow-gpu==1.14 --force
-    python3 -m pip install --user keras numpy opencv-python
+    python3 -m pip install --user keras numpy opencv-python matplotlib
