@@ -1,0 +1,14 @@
+# pull docker image with latest tensorflow gpu version and python3
+Bootstrap: docker
+From: tensorflow/tensorflow:latest-gpu-py3
+ 
+# meta data for singularity hub
+%labels
+    Maintainer Muhsin Fatih Yorulmaz
+ 
+# install virtualenvironment
+%post
+    apt update
+    apt install -y python3-venv
+    python3 -m pip install --user tensorflow-gpu==1.14 --force
+    python3 -m pip install --user keras numpy cv2 
