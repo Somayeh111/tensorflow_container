@@ -13,3 +13,4 @@ From: tensorflow/tensorflow:latest-gpu-py3
     python3 -m pip install --user --upgrade pip
     python3 -m pip install --user tensorflow-gpu==1.14 --force
     python3 -m pip install --user keras numpy opencv-python matplotlib --force
+    export PATH=$PATH:~/.local/bin/
